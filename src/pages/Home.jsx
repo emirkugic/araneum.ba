@@ -44,6 +44,7 @@ const Home = () => {
 
 	return (
 		<div className={styles.container}>
+			<div className={styles.backgroundEffect}></div>
 			{/* Header */}
 			<header
 				className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
@@ -180,94 +181,50 @@ const Home = () => {
 					<div className={styles.glowBar}></div>
 					<p>Revolutionary school management system</p>
 				</div>
-				<div className={styles.parallaxContainer}>
-					<div
-						className={styles.parallaxCodeLayer}
-						style={{ transform: `translateY(${scrollPosition * 0.05}px)` }}
-					>
-						<pre>
-							{`
-              class SchoolManagement {
-                constructor() {
-                  this.students = [];
-                  this.classes = [];
-                  this.teachers = [];
-                }
-                
-                registerStudent(student) {
-                  this.students.push(student);
-                  return student.id;
-                }
-                
-                assignClass(studentId, classId) {
-                  // Assignment logic
-                }
-                
-                recordGrade(studentId, classId, grade) {
-                  // Grade recording logic
-                }
-                
-                generateReport(studentId) {
-                  // Report generation
-                }
-              }
-              
-              const mojDnevnik = new SchoolManagement();
-              `}
-						</pre>
+				<div className={styles.productContent}>
+					<div className={styles.productImageBox}>
+						<div className={styles.productImageGlow}></div>
+						<div className={styles.productImageFrame}>
+							<img src="/image1.png" alt="School Management System Interface" />
+						</div>
 					</div>
-					<div className={styles.parallaxContent}>
-						<div
-							className={styles.parallaxImageContainer}
-							style={{ transform: `translateY(${scrollPosition * 0.1}px)` }}
+					<div className={styles.productInfo}>
+						<h3>
+							mojDnevnik<span className={styles.blinkCursor}>_</span>
+						</h3>
+						<p className={styles.productSubtitle}>Next-Gen School Management</p>
+						<p>
+							A comprehensive digital platform revolutionizing how educational
+							institutions manage their operations, with advanced features and
+							an intuitive interface.
+						</p>
+						<ul className={styles.productFeatures}>
+							<li>
+								<FontAwesomeIcon icon={faCheckCircle} /> Student Information
+								System
+							</li>
+							<li>
+								<FontAwesomeIcon icon={faCheckCircle} /> Intelligent Grade
+								Tracking
+							</li>
+							<li>
+								<FontAwesomeIcon icon={faCheckCircle} /> Automated Attendance
+							</li>
+							<li>
+								<FontAwesomeIcon icon={faCheckCircle} /> Real-time Communication
+							</li>
+							<li>
+								<FontAwesomeIcon icon={faCheckCircle} /> Resource Management
+							</li>
+						</ul>
+						<a
+							href="https://mojdnevnik.araneum.ba"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.productBtn}
 						>
-							<img
-								src="/image1.png"
-								alt="School Management System Interface"
-								className={styles.parallaxImage}
-							/>
-						</div>
-						<div className={styles.productInfo}>
-							<h3>
-								mojDnevnik<span className={styles.blinkCursor}>_</span>
-							</h3>
-							<p className={styles.productSubtitle}>
-								Next-Gen School Management
-							</p>
-							<p>
-								A comprehensive digital platform revolutionizing how educational
-								institutions manage their operations, with advanced features and
-								an intuitive interface.
-							</p>
-							<ul className={styles.productFeatures}>
-								<li>
-									<FontAwesomeIcon icon={faCheckCircle} /> Student Information
-									System
-								</li>
-								<li>
-									<FontAwesomeIcon icon={faCheckCircle} /> Intelligent Grade
-									Tracking
-								</li>
-								<li>
-									<FontAwesomeIcon icon={faCheckCircle} /> Automated Attendance
-								</li>
-								<li>
-									<FontAwesomeIcon icon={faCheckCircle} /> Real-time
-									Communication
-								</li>
-								<li>
-									<FontAwesomeIcon icon={faCheckCircle} /> Resource Management
-								</li>
-							</ul>
-							<a
-								href="https://mojdnevnik.araneum.ba"
-								target="_blank"
-								rel="noopener noreferrer"
-								className={styles.productBtn}
-							>
-								Explore Platform <FontAwesomeIcon icon={faArrowRight} />
-							</a>
-						</div>
+							Explore Platform <FontAwesomeIcon icon={faArrowRight} />
+						</a>
 					</div>
 				</div>
 			</section>

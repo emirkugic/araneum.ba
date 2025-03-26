@@ -260,7 +260,7 @@ const Home = () => {
 							together to deliver cutting-edge products that transform
 							businesses and enhance user experiences.
 						</p>
-						<div className={styles.aboutStats}>
+						{/* <div className={styles.aboutStats}>
 							<div className={styles.statItem}>
 								<span className={styles.statNumber}>50+</span>
 								<span className={styles.statLabel}>Projects Completed</span>
@@ -273,7 +273,7 @@ const Home = () => {
 								<span className={styles.statNumber}>5+</span>
 								<span className={styles.statLabel}>Years Experience</span>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

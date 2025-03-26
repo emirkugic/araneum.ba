@@ -18,9 +18,13 @@ import styles from "./Home.module.css";
 const Home = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [scrollPosition, setScrollPosition] = useState(0);
 
 	useEffect(() => {
 		const handleScroll = () => {
+			const position = window.pageYOffset;
+			setScrollPosition(position);
+
 			if (window.scrollY > 50) {
 				setIsScrolled(true);
 			} else {
@@ -45,6 +49,7 @@ const Home = () => {
 				className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
 			>
 				<div className={styles.logo}>
+					<div className={styles.logoGlow}></div>
 					<h1>araneum</h1>
 				</div>
 				<div className={styles.mobileMenuToggle} onClick={toggleMenu}>
@@ -85,19 +90,27 @@ const Home = () => {
 
 			{/* Hero Section */}
 			<section id="home" className={styles.hero}>
-				<div className={styles.heroOverlay}></div>
+				<div className={styles.heroGrid}>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+					<div className={styles.gridItem}></div>
+				</div>
 				<div className={styles.heroContent}>
-					<h1>Innovative Software Solutions</h1>
-					<p>
-						We build custom software that helps businesses thrive in the digital
-						world
-					</p>
+					<h1>
+						Next-Gen Software <span>Solutions</span>
+					</h1>
+					<p>Building the digital future with cutting-edge technology</p>
 					<div className={styles.heroCta}>
 						<a href="#services" className={styles.primaryBtn}>
-							Our Services
+							Explore Services
 						</a>
 						<a href="#contact" className={styles.secondaryBtn}>
-							Get in Touch
+							Connect With Us
 						</a>
 					</div>
 				</div>
@@ -108,7 +121,8 @@ const Home = () => {
 				<div className={styles.sectionHeader}>
 					<span className={styles.sectionTag}>What We Do</span>
 					<h2>Our Services</h2>
-					<p>We deliver tailored solutions to meet your business needs</p>
+					<div className={styles.glowBar}></div>
+					<p>Innovative solutions for the digital age</p>
 				</div>
 				<div className={styles.serviceGrid}>
 					<div className={styles.serviceCard}>
@@ -117,11 +131,11 @@ const Home = () => {
 						</div>
 						<h3>Web Development</h3>
 						<p>
-							Custom websites and web applications designed to enhance your
-							online presence and drive customer engagement.
+							Cutting-edge web applications and sites using the latest
+							technologies and frameworks.
 						</p>
 						<a href="#" className={styles.serviceLink}>
-							<span>Learn More</span>
+							<span>Discover More</span>
 							<FontAwesomeIcon icon={faArrowRight} />
 						</a>
 					</div>
@@ -132,11 +146,11 @@ const Home = () => {
 						</div>
 						<h3>Software Solutions</h3>
 						<p>
-							Bespoke software applications tailored to streamline your
-							operations and improve workflow efficiency.
+							Custom software applications engineered to optimize workflows and
+							drive business growth.
 						</p>
 						<a href="#" className={styles.serviceLink}>
-							<span>Learn More</span>
+							<span>Discover More</span>
 							<FontAwesomeIcon icon={faArrowRight} />
 						</a>
 					</div>
@@ -147,38 +161,147 @@ const Home = () => {
 						</div>
 						<h3>Mobile Applications</h3>
 						<p>
-							Powerful, user-friendly mobile apps that provide seamless
-							experiences across iOS and Android platforms.
+							Native and cross-platform mobile experiences designed for
+							performance and usability.
 						</p>
 						<a href="#" className={styles.serviceLink}>
-							<span>Learn More</span>
+							<span>Discover More</span>
 							<FontAwesomeIcon icon={faArrowRight} />
 						</a>
 					</div>
 				</div>
 			</section>
 
+			{/* Featured Product Section */}
+			<section id="products" className={styles.featuredProduct}>
+				<div className={styles.sectionHeader}>
+					<span className={styles.sectionTag}>Our Products</span>
+					<h2>Featured Solution</h2>
+					<div className={styles.glowBar}></div>
+					<p>Revolutionary school management system</p>
+				</div>
+				<div className={styles.parallaxContainer}>
+					<div
+						className={styles.parallaxCodeLayer}
+						style={{ transform: `translateY(${scrollPosition * 0.05}px)` }}
+					>
+						<pre>
+							{`
+              class SchoolManagement {
+                constructor() {
+                  this.students = [];
+                  this.classes = [];
+                  this.teachers = [];
+                }
+                
+                registerStudent(student) {
+                  this.students.push(student);
+                  return student.id;
+                }
+                
+                assignClass(studentId, classId) {
+                  // Assignment logic
+                }
+                
+                recordGrade(studentId, classId, grade) {
+                  // Grade recording logic
+                }
+                
+                generateReport(studentId) {
+                  // Report generation
+                }
+              }
+              
+              const mojDnevnik = new SchoolManagement();
+              `}
+						</pre>
+					</div>
+					<div className={styles.parallaxContent}>
+						<div
+							className={styles.parallaxImageContainer}
+							style={{ transform: `translateY(${scrollPosition * 0.1}px)` }}
+						>
+							<img
+								src="/image1.png"
+								alt="School Management System Interface"
+								className={styles.parallaxImage}
+							/>
+						</div>
+						<div className={styles.productInfo}>
+							<h3>
+								mojDnevnik<span className={styles.blinkCursor}>_</span>
+							</h3>
+							<p className={styles.productSubtitle}>
+								Next-Gen School Management
+							</p>
+							<p>
+								A comprehensive digital platform revolutionizing how educational
+								institutions manage their operations, with advanced features and
+								an intuitive interface.
+							</p>
+							<ul className={styles.productFeatures}>
+								<li>
+									<FontAwesomeIcon icon={faCheckCircle} /> Student Information
+									System
+								</li>
+								<li>
+									<FontAwesomeIcon icon={faCheckCircle} /> Intelligent Grade
+									Tracking
+								</li>
+								<li>
+									<FontAwesomeIcon icon={faCheckCircle} /> Automated Attendance
+								</li>
+								<li>
+									<FontAwesomeIcon icon={faCheckCircle} /> Real-time
+									Communication
+								</li>
+								<li>
+									<FontAwesomeIcon icon={faCheckCircle} /> Resource Management
+								</li>
+							</ul>
+							<a
+								href="https://mojdnevnik.araneum.ba"
+								target="_blank"
+								rel="noopener noreferrer"
+								className={styles.productBtn}
+							>
+								Explore Platform <FontAwesomeIcon icon={faArrowRight} />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* About Section */}
 			<section id="about" className={styles.about}>
+				<div className={styles.aboutGrid}>
+					<div className={styles.aboutGridBg}></div>
+				</div>
 				<div className={styles.aboutContent}>
-					<div className={styles.aboutImage}>
-						<img
-							src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-							alt="Team working together"
-						/>
+					<div
+						className={styles.aboutImage}
+						style={{ transform: `translateY(${scrollPosition * 0.08}px)` }}
+					>
+						<div className={styles.aboutImageFrame}>
+							<img
+								src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+								alt="Our Team"
+							/>
+						</div>
 					</div>
 					<div className={styles.aboutText}>
 						<span className={styles.sectionTag}>Who We Are</span>
 						<h2>About Araneum</h2>
+						<div className={styles.glowBar}></div>
 						<p>
-							We are a passionate team of developers, designers, and strategists
-							dedicated to creating innovative digital solutions that solve
-							real-world problems.
+							We are a forward-thinking software development company dedicated
+							to creating innovative digital solutions that push the boundaries
+							of what's possible.
 						</p>
 						<p>
-							With years of experience in software development, we combine
-							technical expertise with creative thinking to deliver products
-							that exceed expectations.
+							Our team of expert developers, designers, and strategists work
+							together to deliver cutting-edge products that transform
+							businesses and enhance user experiences.
 						</p>
 						<div className={styles.aboutStats}>
 							<div className={styles.statItem}>
@@ -198,66 +321,13 @@ const Home = () => {
 				</div>
 			</section>
 
-			{/* Featured Product Section */}
-			<section id="products" className={styles.featuredProduct}>
-				<div className={styles.sectionHeader}>
-					<span className={styles.sectionTag}>Our Products</span>
-					<h2>Featured Solution</h2>
-					<p>Our flagship product for educational institutions</p>
-				</div>
-				<div className={styles.productContent}>
-					<div className={styles.productInfo}>
-						<h3>mojDnevnik</h3>
-						<p className={styles.productSubtitle}>School Management System</p>
-						<p>
-							A comprehensive platform designed to streamline educational
-							processes, enhance communication, and simplify administrative
-							tasks for schools of all sizes.
-						</p>
-						<ul className={styles.productFeatures}>
-							<li>
-								<FontAwesomeIcon icon={faCheckCircle} /> Student Information
-								Management
-							</li>
-							<li>
-								<FontAwesomeIcon icon={faCheckCircle} /> Grade Tracking &
-								Reporting
-							</li>
-							<li>
-								<FontAwesomeIcon icon={faCheckCircle} /> Attendance Monitoring
-							</li>
-							<li>
-								<FontAwesomeIcon icon={faCheckCircle} /> Teacher-Parent
-								Communication
-							</li>
-							<li>
-								<FontAwesomeIcon icon={faCheckCircle} /> Resource Scheduling
-							</li>
-						</ul>
-						<a
-							href="https://mojdnevnik.araneum.ba"
-							target="_blank"
-							rel="noopener noreferrer"
-							className={styles.productBtn}
-						>
-							Explore mojDnevnik <FontAwesomeIcon icon={faArrowRight} />
-						</a>
-					</div>
-					<div className={styles.productImage}>
-						<img
-							src="https://images.unsplash.com/photo-1599687267812-35c05ff70ee9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-							alt="School Management System Interface"
-						/>
-					</div>
-				</div>
-			</section>
-
 			{/* Testimonial Section */}
 			<section className={styles.testimonials}>
 				<div className={styles.sectionHeader}>
-					<span className={styles.sectionTag}>Testimonials</span>
+					<span className={styles.sectionTag}>Client Feedback</span>
 					<h2>What Our Clients Say</h2>
-					<p>Don't just take our word for it</p>
+					<div className={styles.glowBar}></div>
+					<p>Real experiences from our partners</p>
 				</div>
 				<div className={styles.testimonialContainer}>
 					<div className={styles.testimonialCard}>
@@ -312,9 +382,10 @@ const Home = () => {
 					<div className={styles.contactInfo}>
 						<span className={styles.sectionTag}>Get In Touch</span>
 						<h2>Contact Us</h2>
+						<div className={styles.glowBar}></div>
 						<p>
-							Ready to discuss your project? We're here to help transform your
-							ideas into reality.
+							Ready to start your next digital project? Let's create something
+							amazing together.
 						</p>
 						<div className={styles.contactDetails}>
 							<div className={styles.contactItem}>
@@ -323,7 +394,7 @@ const Home = () => {
 									className={styles.contactIcon}
 								/>
 								<div>
-									<h4>Email</h4>
+									<h4>Email Us</h4>
 									<p>info@araneum.ba</p>
 								</div>
 							</div>
@@ -333,7 +404,7 @@ const Home = () => {
 									className={styles.contactIcon}
 								/>
 								<div>
-									<h4>Phone</h4>
+									<h4>Call Us</h4>
 									<p>+387 XX XXX XXX</p>
 								</div>
 							</div>
@@ -375,10 +446,12 @@ const Home = () => {
 			<footer className={styles.footer}>
 				<div className={styles.footerContent}>
 					<div className={styles.footerAbout}>
-						<h3>araneum</h3>
+						<h3>
+							araneum<span className={styles.blinkCursor}>_</span>
+						</h3>
 						<p>
-							Building innovative software solutions that drive digital
-							transformation and business growth.
+							Crafting innovative digital solutions that power the future of
+							business and technology.
 						</p>
 					</div>
 					<div className={styles.footerNav}>

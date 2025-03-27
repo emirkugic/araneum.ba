@@ -235,15 +235,23 @@ const Home = () => {
 					<div className={styles.aboutGridBg}></div>
 				</div>
 				<div className={styles.aboutContent}>
-					<div
-						className={styles.aboutImage}
-						style={{ transform: `translateY(${scrollPosition * 0.08}px)` }}
-					>
-						<div className={styles.aboutImageFrame}>
-							<img
-								src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-								alt="Our Team"
-							/>
+					<div className={styles.aboutImageContainer}>
+						<div className={styles.aboutImageGlow}></div>
+						<div
+							className={styles.aboutImage}
+							style={{
+								transform:
+									scrollPosition > 100
+										? `translateY(${Math.min(scrollPosition * 0.03, 20)}px)`
+										: "none",
+							}}
+						>
+							<div className={styles.aboutImageFrame}>
+								<img
+									src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+									alt="Our Team"
+								/>
+							</div>
 						</div>
 					</div>
 					<div className={styles.aboutText}>
@@ -260,20 +268,6 @@ const Home = () => {
 							together to deliver cutting-edge products that transform
 							businesses and enhance user experiences.
 						</p>
-						{/* <div className={styles.aboutStats}>
-							<div className={styles.statItem}>
-								<span className={styles.statNumber}>50+</span>
-								<span className={styles.statLabel}>Projects Completed</span>
-							</div>
-							<div className={styles.statItem}>
-								<span className={styles.statNumber}>30+</span>
-								<span className={styles.statLabel}>Happy Clients</span>
-							</div>
-							<div className={styles.statItem}>
-								<span className={styles.statNumber}>5+</span>
-								<span className={styles.statLabel}>Years Experience</span>
-							</div>
-						</div> */}
 					</div>
 				</div>
 			</section>

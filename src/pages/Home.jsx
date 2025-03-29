@@ -51,7 +51,11 @@ const Home = () => {
 			>
 				<div className={styles.logo}>
 					<div className={styles.logoGlow}></div>
-					<h1>araneum</h1>
+					<img
+						src="/logo-long-white.png"
+						alt="Araneum"
+						className={styles.logoImage}
+					/>
 				</div>
 				<div className={styles.mobileMenuToggle} onClick={toggleMenu}>
 					<FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />

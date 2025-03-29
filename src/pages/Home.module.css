@@ -183,21 +183,25 @@ section {
 	align-items: center;
 	z-index: 1000;
 	transition: var(--transition);
-	background-color: rgba(15, 22, 36, 0.8);
-	backdrop-filter: blur(10px);
+	background-color: rgba(15, 22, 36, 0.5);
+	backdrop-filter: blur(5px);
 }
 
 .header.scrolled {
 	padding: 0.8rem 5%;
-	background-color: rgba(15, 22, 36, 0.9);
+	background-color: rgba(15, 22, 36, 0.95);
 	backdrop-filter: blur(15px);
 	border-bottom: 1px solid rgba(15, 240, 252, 0.1);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Updated Logo Styles */
 .logo {
 	display: flex;
 	align-items: center;
 	position: relative;
+	height: 40px;
+	margin-right: 20px;
 }
 
 .logoGlow {
@@ -209,6 +213,15 @@ section {
 	opacity: 0.2;
 	border-radius: 50%;
 	z-index: -1;
+}
+
+.logoImage {
+	max-height: 40px;
+	width: auto;
+	display: block;
+	transition: var(--transition);
+	user-select: none;
+	pointer-events: none;
 }
 
 .logo h1 {
@@ -1483,6 +1496,15 @@ section {
 		margin: 0 auto;
 		gap: 1rem;
 	}
+	
+	/* Logo responsive adjustments */
+	.logoImage {
+		max-height: 35px;
+	}
+	
+	.logo {
+		height: 35px;
+	}
 
 	section {
 		padding: 5rem 5%;
@@ -1557,6 +1579,15 @@ section {
 @media (max-width: 576px) {
 	.header {
 		padding: 1rem 5%;
+	}
+	
+	/* Small screen logo adjustment */
+	.logoImage {
+		max-height: 30px;
+	}
+	
+	.logo {
+		height: 30px;
 	}
 
 	.heroContent h1 {

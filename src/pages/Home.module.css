@@ -1837,17 +1837,68 @@
 		grid-template-columns: 1fr;
 	}
 
-	.heroImageContainer {
-		margin-top: 2rem;
+	.heroContent {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 
 	.heroTextContainer {
 		max-width: 100%;
 		text-align: center;
+		margin-bottom: 3rem; /* Add more space between text and image container */
+	}
+
+	.heroTitle {
+		margin-bottom: 2.5rem; /* More space after title */
+	}
+
+	.heroDescription {
+		margin-bottom: 3rem; /* More space after description */
+		line-height: 1.8; /* Increase line height for better readability */
+		font-size: 1.15rem; /* Slightly larger font for better readability */
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.heroButtons {
 		justify-content: center;
+		gap: 1.8rem; /* More space between buttons */
+	}
+
+	.heroImageContainer {
+		margin-top: 2rem;
+	}
+
+	/* Improve the code editor container */
+	.heroImageWrapper {
+		max-width: 90%;
+		margin: 1rem auto 2rem;
+	}
+
+	/* Adjust code editor card for better mobile view */
+	.codeEditorCard {
+		transform: scale(0.95); /* Slightly scale down to fit better */
+		transform-origin: center top;
+	}
+
+	/* Reduce header padding */
+	.codeEditorHeader {
+		padding: 0.6rem 1rem;
+	}
+
+	/* Adjust content padding */
+	.codeEditorBody {
+		padding: 1.2rem;
+	}
+
+	/* Reduce font size for better mobile fit */
+	.codeEditorBody {
+		font-size: 0.8rem;
+	}
+
+	/* Adjust the indentation width for mobile */
+	.codeIndent {
+		width: 16px;
 	}
 
 	.productImage,
@@ -1861,8 +1912,34 @@
 		text-align: center;
 	}
 
+	.productTitle {
+		text-align: center;
+		justify-content: center;
+		margin: 0 auto 0.3rem; /* Center with appropriate spacing */
+	}
+
+	.productTagline {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.productDescription {
+		text-align: center;
+	}
+
+	.productFeatures {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.productFeature {
 		justify-content: center;
+	}
+
+	.productLink {
+		margin: 0 auto;
 	}
 
 	.titleUnderline {
@@ -1963,6 +2040,66 @@
 	.projectsSectionTitle {
 		font-size: 1.8rem;
 	}
+
+	.heroContent {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.heroTitle {
+		margin-bottom: 2rem;
+	}
+
+	.heroSubtitle {
+		margin-bottom: 1rem; /* More space after subtitle */
+	}
+
+	.heroTagline {
+		margin-bottom: 1.2rem; /* More space after tagline */
+	}
+
+	.dynamicText {
+		margin-top: 0.8rem; /* More space before dynamic text */
+	}
+
+	/* Make buttons more prominent on mobile */
+	.heroButtons {
+		flex-direction: column;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto 2.5rem; /* Add margin after buttons */
+	}
+
+	.primaryButton,
+	.secondaryButton {
+		width: 100%;
+		justify-content: center;
+		padding: 1rem 1.5rem; /* Larger padding for better touch targets */
+	}
+
+	/* Further adjustments for code editor */
+	.heroImageWrapper {
+		max-width: 85%;
+	}
+
+	.codeEditorCard {
+		transform: scale(0.9);
+	}
+
+	.codeEditorBody {
+		padding: 1rem;
+		font-size: 0.75rem;
+	}
+
+	.codeIndent {
+		width: 12px;
+	}
+
+	/* Adjust line height for better readability */
+	.codeLine {
+		margin-bottom: 0.3rem;
+		line-height: 1.5;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -1982,13 +2119,6 @@
 
 	.heroTagline {
 		font-size: 2rem;
-	}
-
-	.heroButtons {
-		flex-direction: column;
-		width: 100%;
-		max-width: 300px;
-		margin: 0 auto;
 	}
 
 	.testimonialCard {
@@ -2015,5 +2145,38 @@
 
 	.projectsSection {
 		margin-top: 5rem;
+	}
+
+	/* Smallest screens code editor adjustments */
+	.heroImageWrapper {
+		max-width: 95%;
+	}
+
+	.codeEditorCard {
+		transform: scale(0.85);
+	}
+
+	.codeEditorHeader {
+		padding: 0.5rem 0.8rem;
+	}
+
+	.codeEditorBody {
+		padding: 0.8rem;
+		font-size: 0.7rem;
+	}
+
+	.codeLine {
+		margin-bottom: 0.25rem;
+	}
+
+	/* Further reduce indentation */
+	.codeIndent {
+		width: 10px;
+	}
+
+	/* Adjust tech badge sizes and positions */
+	.techBadge {
+		font-size: 0.8rem;
+		padding: 0.2rem 0.6rem;
 	}
 }

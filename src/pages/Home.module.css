@@ -1116,10 +1116,14 @@
 .projectCardImage {
 	position: relative;
 	overflow: hidden;
-	height: 200px;
+	width: 100%;
+	padding-top: 56.25%; /* This maintains 16:9 aspect ratio (9/16 = 0.5625 = 56.25%) */
 }
 
 .projectCardImage img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -1640,6 +1644,158 @@
 	transform: translateX(3px);
 }
 
+/* Contact Form Success/Error Messages */
+.formSuccessMessage,
+.formErrorMessage {
+	background: var(--bg-card);
+	border-radius: var(--border-radius-md);
+	padding: 2.5rem;
+	margin-top: 1rem;
+	text-align: center;
+	border: 1px solid var(--border-color);
+	animation: fadeIn 0.5s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formSuccessMessage {
+	border-top: 3px solid var(--secondary-color);
+}
+
+.formErrorMessage {
+	border-top: 3px solid #ff4b6b;
+	margin-top: 2rem;
+}
+
+.successIcon,
+.errorIcon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1.5rem;
+}
+
+.successIcon {
+	background: rgba(0, 219, 222, 0.1);
+	color: var(--secondary-color);
+}
+
+.errorIcon {
+	background: rgba(255, 75, 107, 0.1);
+	color: #ff4b6b;
+}
+
+.successTitle,
+.errorTitle {
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+
+.successTitle {
+	color: var(--secondary-color);
+}
+
+.errorTitle {
+	color: #ff4b6b;
+}
+
+.successDescription,
+.errorDescription {
+	color: var(--text-color-secondary);
+	line-height: 1.7;
+	max-width: 90%;
+	margin: 0 auto 2rem;
+}
+
+.checkmarkAnimation {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	animation: drawCheck 1s forwards;
+}
+
+@keyframes drawCheck {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Form Submit Button States */
+.submitButton {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	transition: all var(--transition-normal);
+}
+
+.submitButton.submitting {
+	background: linear-gradient(135deg, #4a3dbb, #0099a0);
+	cursor: not-allowed;
+	opacity: 0.9;
+}
+
+.submitButton.submitting::after {
+	content: "";
+	position: absolute;
+	right: 1.5rem;
+	width: 18px;
+	height: 18px;
+	border: 2px solid white;
+	border-top-color: transparent;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+.secondaryButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.8rem;
+	padding: 0.85rem 1.8rem;
+	background: transparent;
+	color: var(--text-color);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius-md);
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all var(--transition-normal);
+}
+
+.secondaryButton:hover {
+	border-color: var(--primary-color);
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Disabled form styles */
+.form input:disabled,
+.form textarea:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
 /* Footer */
 .footer {
 	background-color: var(--bg-darker);
@@ -1994,6 +2150,11 @@
 	.navList li button {
 		font-size: 1.2rem;
 	}
+
+	.contactForm,
+	.contactInfo {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -2100,6 +2261,17 @@
 		margin-bottom: 0.3rem;
 		line-height: 1.5;
 	}
+
+	.formSuccessMessage,
+	.formErrorMessage {
+		padding: 2rem;
+	}
+
+	.successIcon,
+	.errorIcon {
+		width: 60px;
+		height: 60px;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -2178,5 +2350,19 @@
 	.techBadge {
 		font-size: 0.8rem;
 		padding: 0.2rem 0.6rem;
+	}
+
+	.contactForm {
+		padding: 2rem;
+	}
+
+	.formSuccessMessage,
+	.formErrorMessage {
+		padding: 1.5rem;
+	}
+
+	.successTitle,
+	.errorTitle {
+		font-size: 1.4rem;
 	}
 }

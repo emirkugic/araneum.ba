@@ -163,9 +163,11 @@ const Home = () => {
 				<div className={styles.headerContainer}>
 					<div className={styles.logo}>
 						<div className={styles.logoGlow}></div>
-						<span className={styles.logoText}>
-							araneum<span className={styles.blinkCursor}>_</span>
-						</span>
+						<img
+							src="/logo-long-white.png"
+							alt="Araneum"
+							className={styles.logoImage}
+						/>
 					</div>
 
 					<nav
@@ -1259,9 +1261,11 @@ const Home = () => {
 					<div className={styles.footerTop}>
 						<div className={styles.footerInfo}>
 							<div className={styles.footerLogo}>
-								<span className={styles.logoText}>
-									araneum<span className={styles.blinkCursor}>_</span>
-								</span>
+								<img
+									src="/logo-long-white.png"
+									alt="Araneum"
+									className={styles.footerLogoImage}
+								/>
 							</div>
 							<p className={styles.footerDescription}>
 								Crafting innovative digital solutions that power the future of

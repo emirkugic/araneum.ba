@@ -815,6 +815,226 @@ const Home = () => {
 							</a>
 						</div>
 					</div>
+
+					{/* Projects Grid */}
+					<div className={styles.projectsSection}>
+						<h3 className={`${styles.projectsSectionTitle} reveal fade-up`}>
+							Our Other Projects
+						</h3>
+						<div className={styles.projectsGrid}>
+							{/* Glasnik News */}
+							<div
+								className={`${styles.projectCard} reveal fade-up`}
+								style={{ animationDelay: "0.1s" }}
+							>
+								<div className={styles.projectCardImage}>
+									<img src="/glasnik.png" alt="Glasnik News Website" />
+									<div className={styles.projectCardOverlay}>
+										<div className={styles.projectTags}>
+											<span>Web Development</span>
+											<span>ReactJS</span>
+										</div>
+									</div>
+								</div>
+								<div className={styles.projectCardContent}>
+									<h4>Glasnik</h4>
+									<p>
+										A modern news website with real-time updates and a
+										user-friendly interface for reading and sharing articles.
+									</p>
+									<a href="/projects/news" className={styles.projectCardLink}>
+										View Project
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5 12H19M19 12L12 5M19 12L12 19"
+												stroke="currentColor"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							{/* MetalPrec */}
+							<div
+								className={`${styles.projectCard} reveal fade-up`}
+								style={{ animationDelay: "0.2s" }}
+							>
+								<div className={styles.projectCardImage}>
+									<img src="/metalprec.png" alt="MetalPrec Website" />
+									<div className={styles.projectCardOverlay}>
+										<div className={styles.projectTags}>
+											<span>Web Development</span>
+											<span>ReactJS</span>
+										</div>
+									</div>
+								</div>
+								<div className={styles.projectCardContent}>
+									<h4>MetalPrec</h4>
+									<p>
+										A CNC machine business website with a product catalog,
+										pricing, and contact form for customers to request quotes.
+									</p>
+									<a
+										href="/projects/metalprec"
+										className={styles.projectCardLink}
+									>
+										View Project
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5 12H19M19 12L12 5M19 12L12 19"
+												stroke="currentColor"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							{/* Barber Reservation */}
+							<div
+								className={`${styles.projectCard} reveal fade-up`}
+								style={{ animationDelay: "0.3s" }}
+							>
+								<div className={styles.projectCardImage}>
+									<img src="/barber.png" alt="Barber Reservation System" />
+									<div className={styles.projectCardOverlay}>
+										<div className={styles.projectTags}>
+											<span>Web Development</span>
+											<span>ReactJS</span>
+										</div>
+									</div>
+								</div>
+								<div className={styles.projectCardContent}>
+									<h4>Barber Reservation</h4>
+									<p>
+										A barber reservation system with a booking calendar, user
+										profiles, and notifications for appointments.
+									</p>
+									<a href="/projects/barber" className={styles.projectCardLink}>
+										View Project
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5 12H19M19 12L12 5M19 12L12 19"
+												stroke="currentColor"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							{/* Coffee Shop */}
+							<div
+								className={`${styles.projectCard} reveal fade-up`}
+								style={{ animationDelay: "0.4s" }}
+							>
+								<div className={styles.projectCardImage}>
+									<img src="/coffee.png" alt="Coffee Shop Website" />
+									<div className={styles.projectCardOverlay}>
+										<div className={styles.projectTags}>
+											<span>Web Development</span>
+											<span>ReactJS</span>
+										</div>
+									</div>
+								</div>
+								<div className={styles.projectCardContent}>
+									<h4>Coffee Shop</h4>
+									<p>
+										A coffee shop website with a menu, online ordering, and
+										contact form for customers to place orders and make
+										reservations.
+									</p>
+									<a href="/projects/coffee" className={styles.projectCardLink}>
+										View Project
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5 12H19M19 12L12 5M19 12L12 19"
+												stroke="currentColor"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							{/* Photography Portfolio */}
+							<div
+								className={`${styles.projectCard} reveal fade-up`}
+								style={{ animationDelay: "0.5s" }}
+							>
+								<div className={styles.projectCardImage}>
+									<img src="/photography.png" alt="Photography Portfolio" />
+									<div className={styles.projectCardOverlay}>
+										<div className={styles.projectTags}>
+											<span>Web Development</span>
+											<span>HTML/CSS/JS</span>
+										</div>
+									</div>
+								</div>
+								<div className={styles.projectCardContent}>
+									<h4>Photography Portfolio</h4>
+									<p>
+										A beautiful photography portfolio showcasing nature
+										photography with a responsive design and smooth animations.
+									</p>
+									<a
+										href="/projects/photography"
+										className={styles.projectCardLink}
+									>
+										View Project
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5 12H19M19 12L12 5M19 12L12 19"
+												stroke="currentColor"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 

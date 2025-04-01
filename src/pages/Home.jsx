@@ -338,9 +338,9 @@ const Home = () => {
 										<span className={styles.codeThis}>this</span>.expertise ={" "}
 										{"{"}
 										<span className={styles.codeProperty}>years</span>:
-										<span className={styles.codeNumber}> 10</span>,
-										<span className={styles.codeProperty}> clients</span>:
-										<span className={styles.codeNumber}> 100</span>
+										<span className={styles.codeNumber}> 3</span>,
+										<span className={styles.codeProperty}> projects</span>:
+										<span className={styles.codeNumber}> 15+</span>
 										{"}"};
 									</div>
 									<div className={styles.codeLine}>
@@ -842,7 +842,10 @@ const Home = () => {
 										A modern news website with real-time updates and a
 										user-friendly interface for reading and sharing articles.
 									</p>
-									<a href="/projects/news" className={styles.projectCardLink}>
+									<a
+										href="https://portfolio.araneum.ba/projects/news"
+										className={styles.projectCardLink}
+									>
 										View Project
 										<svg
 											width="16"
@@ -884,7 +887,7 @@ const Home = () => {
 										pricing, and contact form for customers to request quotes.
 									</p>
 									<a
-										href="/projects/metalprec"
+										href="https://portfolio.araneum.ba/projects/metalprec"
 										className={styles.projectCardLink}
 									>
 										View Project
@@ -927,7 +930,10 @@ const Home = () => {
 										A barber reservation system with a booking calendar, user
 										profiles, and notifications for appointments.
 									</p>
-									<a href="/projects/barber" className={styles.projectCardLink}>
+									<a
+										href="https://portfolio.araneum.ba/projects/barber"
+										className={styles.projectCardLink}
+									>
 										View Project
 										<svg
 											width="16"
@@ -969,7 +975,10 @@ const Home = () => {
 										contact form for customers to place orders and make
 										reservations.
 									</p>
-									<a href="/projects/coffee" className={styles.projectCardLink}>
+									<a
+										href="https://portfolio.araneum.ba/projects/coffee"
+										className={styles.projectCardLink}
+									>
 										View Project
 										<svg
 											width="16"
@@ -1011,7 +1020,7 @@ const Home = () => {
 										photography with a responsive design and smooth animations.
 									</p>
 									<a
-										href="/projects/photography"
+										href="https://portfolio.araneum.ba/projects/photography"
 										className={styles.projectCardLink}
 									>
 										View Project
@@ -1070,7 +1079,7 @@ const Home = () => {
 								cloud platforms.
 							</p>
 
-							<div className={styles.aboutStats}>
+							{/* <div className={styles.aboutStats}>
 								<div className={styles.statItem}>
 									<span className={styles.statNumber}>10+</span>
 									<span className={styles.statLabel}>Years Experience</span>
@@ -1083,7 +1092,7 @@ const Home = () => {
 									<span className={styles.statNumber}>50+</span>
 									<span className={styles.statLabel}>Happy Clients</span>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

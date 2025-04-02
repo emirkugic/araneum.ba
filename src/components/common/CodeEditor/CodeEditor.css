@@ -1,0 +1,138 @@
+.code-editor-card {
+	background: var(--bg-card);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--border-color);
+	overflow: hidden;
+	box-shadow: 0 20px 40px var(--shadow-color);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	position: relative;
+	z-index: 10;
+	animation: float 6s ease-in-out infinite;
+}
+
+.code-editor-header {
+	background: rgba(10, 11, 23, 0.6);
+	padding: 0.8rem 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.editor-controls {
+	display: flex;
+	gap: 6px;
+}
+
+.editor-control {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: block;
+}
+
+.editor-control:nth-child(1) {
+	background-color: #ff5f57;
+}
+.editor-control:nth-child(2) {
+	background-color: #febc2e;
+}
+.editor-control:nth-child(3) {
+	background-color: #28c840;
+}
+
+.editor-title {
+	color: var(--text-color-secondary);
+	font-size: 0.9rem;
+	font-family: var(--font-family-code);
+}
+
+.code-editor-body {
+	padding: 1.5rem;
+	font-family: var(--font-family-code);
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+.code-line {
+	margin-bottom: 0.4rem;
+	white-space: pre-wrap;
+	color: var(--text-color);
+}
+
+.code-comment {
+	color: #636e7b;
+}
+.code-keyword {
+	color: #c678dd;
+}
+.code-class {
+	color: #e5c07b;
+}
+.code-string {
+	color: #98c379;
+}
+.code-this {
+	color: #e06c75;
+}
+.code-property {
+	color: #e06c75;
+}
+.code-function {
+	color: #61afef;
+}
+.code-number {
+	color: #d19a66;
+}
+.code-param {
+	color: #abb2bf;
+}
+.code-indent {
+	display: inline-block;
+	width: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+	.code-editor-card {
+		transform: scale(0.95);
+		transform-origin: center top;
+	}
+
+	.code-editor-header {
+		padding: 0.6rem 1rem;
+	}
+
+	.code-editor-body {
+		padding: 1.2rem;
+		font-size: 0.8rem;
+	}
+
+	.code-indent {
+		width: 16px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.code-editor-card {
+		transform: scale(0.85);
+	}
+
+	.code-editor-header {
+		padding: 0.5rem 0.8rem;
+	}
+
+	.code-editor-body {
+		padding: 0.8rem;
+		font-size: 0.7rem;
+	}
+
+	.code-indent {
+		width: 10px;
+	}
+
+	.code-line {
+		margin-bottom: 0.25rem;
+	}
+}

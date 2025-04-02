@@ -1,0 +1,94 @@
+.service-card {
+	background: var(--bg-card);
+	border-radius: var(--border-radius-lg);
+	padding: 2.5rem;
+	border: 1px solid var(--border-color);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	transition: all var(--transition-normal);
+	position: relative;
+	overflow: hidden;
+}
+
+.service-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: var(--gradient-primary);
+	transition: width var(--transition-normal);
+}
+
+.service-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 20px 40px var(--shadow-color);
+	border-color: rgba(110, 87, 255, 0.3);
+}
+
+.service-card:hover::before {
+	width: 100%;
+}
+
+.service-icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: rgba(110, 87, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	color: var(--primary-color);
+	transition: all var(--transition-normal);
+}
+
+.service-card:hover .service-icon {
+	background: var(--gradient-primary);
+	color: white;
+	transform: scale(1.1);
+	box-shadow: var(--glow-primary);
+}
+
+.service-title {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	color: var(--text-color);
+	transition: color var(--transition-normal);
+}
+
+.service-card:hover .service-title {
+	color: var(--primary-light);
+}
+
+.service-description {
+	color: var(--text-color-secondary);
+	margin-bottom: 1.5rem;
+	line-height: 1.7;
+}
+
+.service-link {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--primary-color);
+	font-weight: 600;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	transition: all var(--transition-normal);
+}
+
+.service-link svg {
+	transition: transform var(--transition-normal);
+}
+
+.service-link:hover {
+	color: var(--primary-light);
+}
+
+.service-link:hover svg {
+	transform: translateX(5px);
+}

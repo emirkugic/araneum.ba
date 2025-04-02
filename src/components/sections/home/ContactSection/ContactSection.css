@@ -1,0 +1,54 @@
+.contact-section {
+	padding: 8rem 0;
+	background-color: var(--bg-darker);
+	position: relative;
+	overflow: hidden;
+}
+
+.contact-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(
+		circle at 70% 70%,
+		rgba(0, 219, 222, 0.1) 0%,
+		transparent 70%
+	);
+	z-index: 1;
+}
+
+.contact-content {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	gap: 3rem;
+	align-items: stretch;
+	position: relative;
+	z-index: 10;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+	.contact-section {
+		padding: 6rem 0;
+	}
+
+	.contact-content {
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact-section {
+		padding: 5rem 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.contact-content {
+		gap: 2rem;
+	}
+}

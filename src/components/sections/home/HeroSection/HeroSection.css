@@ -1,0 +1,257 @@
+.hero-section {
+	padding: 10rem 0 6rem;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.hero-content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+.hero-text-container {
+	max-width: 600px;
+}
+
+.hero-title {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+	font-size: 1.2rem;
+	color: var(--text-color-secondary);
+	margin-bottom: 0.75rem;
+	font-weight: 500;
+}
+
+.hero-tagline {
+	font-size: 3.5rem;
+	line-height: 1.1;
+	margin-bottom: 0.75rem;
+	font-weight: 800;
+}
+
+.hero-tagline .accent {
+	background: var(--gradient-primary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.dynamic-text {
+	display: flex;
+	font-size: 1.8rem;
+	margin-top: 0.5rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.static-text {
+	color: var(--text-color-secondary);
+	font-weight: 500;
+	margin-right: 0.5rem;
+}
+
+.typing-text {
+	color: var(--secondary-color);
+	font-weight: 700;
+	position: relative;
+	min-width: 120px;
+}
+
+.typing-text::after {
+	content: "|";
+	position: absolute;
+	right: -8px;
+	animation: blink-caret 0.75s step-end infinite;
+	color: var(--secondary-color);
+}
+
+.hero-description {
+	font-size: 1.1rem;
+	color: var(--text-color-secondary);
+	margin-bottom: 2.5rem;
+	line-height: 1.7;
+}
+
+.hero-buttons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.hero-image-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.hero-image-wrapper {
+	position: relative;
+	max-width: 550px;
+	perspective: 1000px;
+}
+
+.floating-elements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+}
+
+.tech-badge {
+	position: absolute;
+	padding: 0.5rem 1rem;
+	border-radius: var(--border-radius-sm);
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: white;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	animation: floatBadge 5s ease-in-out infinite;
+}
+
+.tech-badge-1 {
+	top: 10%;
+	right: -10%;
+	background: linear-gradient(135deg, #61dafb, #0080ff);
+	animation-delay: 0s;
+}
+
+.tech-badge-2 {
+	bottom: 15%;
+	right: -5%;
+	background: linear-gradient(135deg, #5c2d91, #9464ce);
+	animation-delay: 1s;
+}
+
+.tech-badge-3 {
+	top: 15%;
+	left: -10%;
+	background: linear-gradient(135deg, #68a063, #3c873a);
+	animation-delay: 2s;
+}
+
+.tech-badge-4 {
+	bottom: 25%;
+	left: -5%;
+	background: linear-gradient(135deg, #13aa52, #81c053);
+	animation-delay: 1.5s;
+}
+
+.tech-badge-5 {
+	top: 50%;
+	right: -8%;
+	background: linear-gradient(135deg, #ff9900, #ff7400);
+	animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+	.hero-tagline {
+		font-size: 3rem;
+	}
+
+	.hero-content {
+		gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.hero-content {
+		grid-template-columns: 1fr;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.hero-text-container {
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.hero-title {
+		margin-bottom: 2.5rem;
+	}
+
+	.hero-description {
+		margin-bottom: 3rem;
+		line-height: 1.8;
+		font-size: 1.15rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-buttons {
+		justify-content: center;
+		gap: 1.8rem;
+	}
+
+	.hero-image-container {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-section {
+		padding: 8rem 0 4rem;
+	}
+
+	.hero-content {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.hero-title {
+		margin-bottom: 2rem;
+	}
+
+	.hero-subtitle {
+		margin-bottom: 1rem;
+	}
+
+	.hero-tagline {
+		font-size: 2.5rem;
+		margin-bottom: 1.2rem;
+	}
+
+	.dynamic-text {
+		font-size: 1.5rem;
+		justify-content: center;
+		margin-top: 0.8rem;
+	}
+
+	.hero-buttons {
+		flex-direction: column;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto 2.5rem;
+	}
+
+	.primary-button,
+	.secondary-button {
+		width: 100%;
+		justify-content: center;
+		padding: 1rem 1.5rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.hero-tagline {
+		font-size: 2rem;
+	}
+
+	.hero-image-wrapper {
+		max-width: 95%;
+	}
+}

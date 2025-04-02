@@ -1,0 +1,52 @@
+/* Global CSS Variables */
+:root {
+	/* Colors */
+	--primary-color: #6e57ff;
+	--primary-light: #a395ff;
+	--primary-dark: #4935c7;
+	--secondary-color: #00dbde;
+	--accent-color: #ff31b9;
+	--text-color: #e9eeff;
+	--text-color-secondary: #abb4d4;
+	--bg-dark: #0a0b17;
+	--bg-darker: #070812;
+	--bg-card: rgba(25, 28, 47, 0.7);
+	--border-color: rgba(142, 154, 224, 0.2);
+	--shadow-color: rgba(7, 7, 25, 0.5);
+
+	/* Shadows & Effects */
+	--glow-primary: 0 0 15px rgba(110, 87, 255, 0.6);
+	--glow-secondary: 0 0 15px rgba(0, 219, 222, 0.6);
+	--glow-accent: 0 0 15px rgba(255, 49, 185, 0.6);
+
+	/* Gradients */
+	--gradient-primary: linear-gradient(
+		135deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	--gradient-accent: linear-gradient(
+		135deg,
+		var(--accent-color),
+		var(--primary-color)
+	);
+	--gradient-glass: linear-gradient(
+		135deg,
+		rgba(25, 28, 47, 0.7),
+		rgba(16, 18, 36, 0.8)
+	);
+
+	/* Transitions */
+	--transition-fast: 0.2s ease-in-out;
+	--transition-normal: 0.3s ease-in-out;
+	--transition-slow: 0.5s ease-in-out;
+
+	/* Border Radius */
+	--border-radius-sm: 6px;
+	--border-radius-md: 12px;
+	--border-radius-lg: 20px;
+
+	/* Typography */
+	--font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+	--font-family-code: "JetBrains Mono", "Fira Code", monospace;
+}

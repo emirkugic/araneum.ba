@@ -65,7 +65,7 @@
 		justify-content: center;
 		padding: 2rem;
 		transition: right var(--transition-normal);
-		z-index: 100;
+		z-index: 105;
 		border-left: 1px solid var(--border-color);
 	}
 

@@ -1,0 +1,126 @@
+{
+    "navigation": {
+        "home": "Startseite",
+        "services": "Dienstleistungen",
+        "products": "Produkte",
+        "about": "Über Uns",
+        "testimonials": "Referenzen",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "subtitle": "Wir gestalten die digitale Zukunft",
+        "tagline": "Neue Generation <1>Software</1>",
+        "poweredBy": "Angetrieben durch",
+        "typingWords": [
+            "Innovation",
+            "Exzellenz",
+            "Zukunft",
+            "Lösungen"
+        ],
+        "description": "Wir entwickeln modernste digitale Lösungen, die Unternehmen transformieren und Benutzererfahrungen in der technologiegetriebenen Welt verbessern.",
+        "buttons": {
+            "services": "Unsere Dienstleistungen",
+            "connect": "Kontaktieren Sie uns"
+        }
+    },
+    "services": {
+        "tag": "Was Wir Tun",
+        "title": "Unsere Dienstleistungen",
+        "description": "Wir bieten umfassende Softwarelösungen, die darauf ausgelegt sind, Ihr Unternehmen mit modernster Technologie und außergewöhnlicher Benutzererfahrung zu verbessern.",
+        "items": {
+            "webDev": {
+                "title": "Webentwicklung",
+                "description": "Maßgeschneiderte Websites und Webanwendungen, die mit modernen Frameworks und bewährten Methoden erstellt wurden und außergewöhnliche Benutzererfahrungen bieten."
+            },
+            "mobileApps": {
+                "title": "Mobile Anwendungen",
+                "description": "Native und plattformübergreifende mobile Apps, die nahtlose Erfahrungen auf iOS- und Android-Geräten mit innovativen Funktionen bieten."
+            },
+            "softwareSolutions": {
+                "title": "Softwarelösungen",
+                "description": "Unternehmenstaugliche Softwarelösungen, die Arbeitsabläufe optimieren, die Effizienz steigern und das Geschäftswachstum mit skalierbarer Architektur fördern."
+            }
+        },
+        "learnMore": "Mehr Erfahren"
+    },
+    "products": {
+        "tag": "Unsere Produkte",
+        "title": "Ausgewählte Lösung",
+        "description": "Entdecken Sie unser Vorzeige-Produkt, das die Bildungsmanagement-Landschaft revolutioniert",
+        "featuredProduct": {
+            "tagline": "Moderne Schulverwaltung",
+            "description": "Eine umfassende digitale Plattform, die revolutioniert, wie Bildungseinrichtungen ihre Abläufe verwalten, mit fortschrittlichen Funktionen und einer intuitiven Benutzeroberfläche für Lehrer, Schüler und Eltern.",
+            "features": [
+                "Schülerverwaltungssystem",
+                "Intelligente Notenverfolgung",
+                "Automatisierte Anwesenheitskontrolle",
+                "Echtzeit-Kommunikation",
+                "Ressourcenverwaltung"
+            ],
+            "exploreButton": "Plattform Erkunden"
+        },
+        "otherProjects": {
+            "title": "Unsere anderen Projekte",
+            "viewProject": "Projekt Ansehen"
+        }
+    },
+    "about": {
+        "tag": "Wer Wir Sind",
+        "title": "Über Araneum",
+        "description1": "Wir sind ein zukunftsorientiertes Softwareentwicklungsunternehmen, das sich der Entwicklung innovativer digitaler Lösungen widmet, die die Grenzen des Möglichen in der heutigen Technologielandschaft verschieben.",
+        "description2": "Unser Team aus erfahrenen Entwicklern, Designern und Strategen arbeitet zusammen, um modernste Produkte zu liefern, die Unternehmen transformieren und Benutzererfahrungen auf Web-, Mobil- und Cloud-Plattformen verbessern."
+    },
+    "testimonials": {
+        "tag": "Was Kunden Sagen",
+        "title": "Referenzen",
+        "description": "Verlassen Sie sich nicht nur auf unser Wort - hören Sie, was unsere Kunden über unsere Arbeit sagen"
+    },
+    "contact": {
+        "tag": "Kontakt Aufnehmen",
+        "title": "Kontaktieren Sie Uns",
+        "description": "Bereit für Ihr nächstes digitales Projekt? Lassen Sie uns gemeinsam etwas Erstaunliches erschaffen.",
+        "info": {
+            "title": "Kontaktinformationen",
+            "description": "Haben Sie Fragen oder möchten Sie über Ihre Projektanforderungen sprechen? Erreichen Sie uns über einen der folgenden Kanäle.",
+            "phone": "Telefon",
+            "email": "E-Mail",
+            "location": "Standort"
+        },
+        "form": {
+            "name": "Name",
+            "email": "E-Mail",
+            "subject": "Betreff",
+            "subjectPlaceholder": "Worum geht es?",
+            "message": "Nachricht",
+            "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt",
+            "sending": "Wird gesendet...",
+            "send": "Nachricht Senden",
+            "success": {
+                "title": "Nachricht erfolgreich gesendet!",
+                "description": "Vielen Dank, dass Sie uns kontaktiert haben. Unser Team wird Ihre Nachricht prüfen und sich in Kürze bei Ihnen melden.",
+                "button": "Weitere Nachricht Senden"
+            },
+            "error": {
+                "title": "Etwas ist schief gelaufen",
+                "button": "Erneut Versuchen"
+            }
+        }
+    },
+    "footer": {
+        "description": "Wir entwickeln innovative digitale Lösungen, die die Zukunft von Unternehmen und Technologie gestalten.",
+        "quickLinks": "Schnelllinks",
+        "services": "Dienstleistungen",
+        "servicesList": {
+            "webDev": "Webentwicklung",
+            "mobileApps": "Mobile Anwendungen",
+            "softwareSolutions": "Softwarelösungen",
+            "uxui": "UX/UI Design",
+            "consulting": "Beratung"
+        },
+        "copyright": "Alle Rechte vorbehalten.",
+        "address": "Sarajevo, Bosnien und Herzegowina"
+    },
+    "codeEditor": {
+        "comment": "// Araneum - Wir gestalten die Zukunft"
+    }
+}

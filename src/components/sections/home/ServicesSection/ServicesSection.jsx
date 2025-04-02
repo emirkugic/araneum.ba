@@ -1,15 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import SectionHeader from "../../../common/SectionHeader/SectionHeader";
 import ServiceCard from "./ServiceCard";
 import "./ServicesSection.css";
 
 const ServicesSection = () => {
+	const { t } = useTranslation();
+
 	const services = [
 		{
 			id: "web-dev",
-			title: "Web Development",
-			description:
-				"Custom websites and web applications built with modern frameworks and best practices, delivering exceptional user experiences.",
+			title: t("services.items.webDev.title"),
+			description: t("services.items.webDev.description"),
 			icon: (
 				<svg
 					width="32"
@@ -38,9 +40,8 @@ const ServicesSection = () => {
 		},
 		{
 			id: "mobile-apps",
-			title: "Mobile Applications",
-			description:
-				"Native and cross-platform mobile apps that provide seamless experiences across iOS and Android devices with innovative features.",
+			title: t("services.items.mobileApps.title"),
+			description: t("services.items.mobileApps.description"),
 			icon: (
 				<svg
 					width="32"
@@ -62,9 +63,8 @@ const ServicesSection = () => {
 		},
 		{
 			id: "software-solutions",
-			title: "Software Solutions",
-			description:
-				"Enterprise-grade software solutions that optimize workflows, increase efficiency, and drive business growth with scalable architecture.",
+			title: t("services.items.softwareSolutions.title"),
+			description: t("services.items.softwareSolutions.description"),
 			icon: (
 				<svg
 					width="32"
@@ -111,9 +111,9 @@ const ServicesSection = () => {
 		<section id="services" className="services-section">
 			<div className="container">
 				<SectionHeader
-					tag="What We Do"
-					title="Our Services"
-					description="We offer comprehensive software solutions designed to elevate your business with cutting-edge technology and exceptional user experiences."
+					tag={t("services.tag")}
+					title={t("services.title")}
+					description={t("services.description")}
 				/>
 
 				<div className="services-grid">

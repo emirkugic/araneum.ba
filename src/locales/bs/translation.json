@@ -1,0 +1,126 @@
+{
+    "navigation": {
+        "home": "Početna",
+        "services": "Usluge",
+        "products": "Proizvodi",
+        "about": "O Nama",
+        "testimonials": "Preporuke",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "subtitle": "Gradimo Digitalnu Budućnost",
+        "tagline": "Nova Generacija <1>Softvera</1>",
+        "poweredBy": "Pokretani",
+        "typingWords": [
+            "Inovacijom",
+            "Izvrsnošću",
+            "Budućnošću",
+            "Rješenjima"
+        ],
+        "description": "Stvaramo moderna digitalna rješenja koja transformišu poslovanje i unapređuju korisničke doživljaje u tehnološki vođenom svijetu.",
+        "buttons": {
+            "services": "Naše Usluge",
+            "connect": "Kontaktirajte Nas"
+        }
+    },
+    "services": {
+        "tag": "Čime Se Bavimo",
+        "title": "Naše Usluge",
+        "description": "Nudimo sveobuhvatna softverska rješenja dizajnirana da unaprijede vaše poslovanje uz najnovije tehnologije i izvanredno korisničko iskustvo.",
+        "items": {
+            "webDev": {
+                "title": "Web Razvoj",
+                "description": "Prilagođene web stranice i aplikacije izgrađene sa modernim tehnologijama i najboljim praksama, pružajući izuzetno korisničko iskustvo."
+            },
+            "mobileApps": {
+                "title": "Mobilne Aplikacije",
+                "description": "Nativne i cross-platform mobilne aplikacije koje pružaju besprijekorna iskustva na iOS i Android uređajima sa inovativnim funkcijama."
+            },
+            "softwareSolutions": {
+                "title": "Softverska Rješenja",
+                "description": "Poslovna softverska rješenja koja optimiziraju radne procese, povećavaju efikasnost i pokreću poslovni rast sa skalabilnom arhitekturom."
+            }
+        },
+        "learnMore": "Saznaj Više"
+    },
+    "products": {
+        "tag": "Naši Proizvodi",
+        "title": "Istaknuto Rješenje",
+        "description": "Otkrijte naš vodeći proizvod koji revolucionira upravljanje obrazovnim ustanovama",
+        "featuredProduct": {
+            "tagline": "Napredni Školski Menadžment",
+            "description": "Sveobuhvatna digitalna platforma koja revolucionira način na koji obrazovne institucije upravljaju svojim operacijama, s naprednim funkcijama i intuitivnim sučeljem dizajniranim za nastavnike, učenike i roditelje.",
+            "features": [
+                "Informacioni sistem za učenike",
+                "Inteligentno praćenje ocjena",
+                "Automatsko praćenje prisustva",
+                "Komunikacija u realnom vremenu",
+                "Upravljanje resursima"
+            ],
+            "exploreButton": "Istraži Platformu"
+        },
+        "otherProjects": {
+            "title": "Naši Ostali Projekti",
+            "viewProject": "Pogledaj Projekat"
+        }
+    },
+    "about": {
+        "tag": "Ko Smo Mi",
+        "title": "O Araneumu",
+        "description1": "Mi smo napredna kompanija za razvoj softvera posvećena stvaranju inovativnih digitalnih rješenja koja pomjeraju granice mogućeg u današnjem tehnološkom pejzažu.",
+        "description2": "Naš tim stručnih programera, dizajnera i stratega radi zajedno na isporuci najmodernijih proizvoda koji transformišu poslovanje i poboljšavaju korisničko iskustvo na web, mobilnim i cloud platformama."
+    },
+    "testimonials": {
+        "tag": "Šta Klijenti Kažu",
+        "title": "Preporuke",
+        "description": "Ne vjerujte samo našim riječima - čujte šta naši klijenti imaju reći o našem radu"
+    },
+    "contact": {
+        "tag": "Stupite U Kontakt",
+        "title": "Kontaktirajte Nas",
+        "description": "Spremni za početak vašeg sljedećeg digitalnog projekta? Zajedno možemo stvoriti nešto nevjerovatno.",
+        "info": {
+            "title": "Kontakt Informacije",
+            "description": "Imate pitanja ili želite razgovarati o zahtjevima vašeg projekta? Kontaktirajte nas putem bilo kojeg od sljedećih kanala.",
+            "phone": "Telefon",
+            "email": "Email",
+            "location": "Lokacija"
+        },
+        "form": {
+            "name": "Ime",
+            "email": "Email",
+            "subject": "Naslov",
+            "subjectPlaceholder": "U vezi čega nas kontaktirate?",
+            "message": "Poruka",
+            "messagePlaceholder": "Recite nam o svom projektu",
+            "sending": "Šalje se...",
+            "send": "Pošalji Poruku",
+            "success": {
+                "title": "Poruka Uspješno Poslana!",
+                "description": "Hvala što ste nas kontaktirali. Naš tim će pregledati vašu poruku i javiti vam se u najkraćem mogućem roku.",
+                "button": "Pošalji Drugu Poruku"
+            },
+            "error": {
+                "title": "Greška Pri Slanju Poruke",
+                "button": "Pokušaj Ponovo"
+            }
+        }
+    },
+    "footer": {
+        "description": "Kreiramo inovativna digitalna rješenja koja pokreću budućnost poslovanja i tehnologije.",
+        "quickLinks": "Brzi Linkovi",
+        "services": "Usluge",
+        "servicesList": {
+            "webDev": "Web Razvoj",
+            "mobileApps": "Mobilne Aplikacije",
+            "softwareSolutions": "Softverska Rješenja",
+            "uxui": "UX/UI Dizajn",
+            "consulting": "Konsalting"
+        },
+        "copyright": "Sva prava pridržana.",
+        "address": "Sarajevo, Bosna i Hercegovina"
+    },
+    "codeEditor": {
+        "comment": "// Araneum - Gradimo budućnost"
+    }
+}

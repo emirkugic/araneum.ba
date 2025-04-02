@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./AboutSection.css";
 
 const AboutSection = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section id="about" className="about-section">
 			<div className="container">
@@ -17,22 +20,13 @@ const AboutSection = () => {
 					</div>
 
 					<div className="about-info reveal fade-left">
-						<span className="section-tag">Who We Are</span>
-						<h2 className="about-title">About Araneum</h2>
+						<span className="section-tag">{t("about.tag")}</span>
+						<h2 className="about-title">{t("about.title")}</h2>
 						<div className="title-underline"></div>
 
-						<p className="about-description">
-							We are a forward-thinking software development company dedicated
-							to creating innovative digital solutions that push the boundaries
-							of what's possible in today's technology landscape.
-						</p>
+						<p className="about-description">{t("about.description1")}</p>
 
-						<p className="about-description">
-							Our team of expert developers, designers, and strategists work
-							together to deliver cutting-edge products that transform
-							businesses and enhance user experiences across web, mobile, and
-							cloud platforms.
-						</p>
+						<p className="about-description">{t("about.description2")}</p>
 
 						{/* 
                         <div className="about-stats">

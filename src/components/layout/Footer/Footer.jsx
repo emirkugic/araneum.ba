@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
 const Footer = ({ scrollToSection }) => {
+	const { t } = useTranslation();
+
 	return (
 		<footer className="footer">
 			<div className="container">
@@ -14,65 +17,64 @@ const Footer = ({ scrollToSection }) => {
 								className="footer-logo-image"
 							/>
 						</div>
-						<p className="footer-description">
-							Crafting innovative digital solutions that power the future of
-							business and technology.
-						</p>
+						<p className="footer-description">{t("footer.description")}</p>
 					</div>
 
 					<div className="footer-links">
 						<div className="footer-link-section">
-							<h3 className="footer-link-title">Quick Links</h3>
+							<h3 className="footer-link-title">{t("footer.quickLinks")}</h3>
 							<ul className="footer-link-list">
 								<li>
-									<button onClick={() => scrollToSection("home")}>Home</button>
+									<button onClick={() => scrollToSection("home")}>
+										{t("navigation.home")}
+									</button>
 								</li>
 								<li>
 									<button onClick={() => scrollToSection("services")}>
-										Services
+										{t("navigation.services")}
 									</button>
 								</li>
 								<li>
 									<button onClick={() => scrollToSection("products")}>
-										Products
+										{t("navigation.products")}
 									</button>
 								</li>
 								<li>
 									<button onClick={() => scrollToSection("about")}>
-										About
+										{t("navigation.about")}
 									</button>
 								</li>
 								<li>
 									<button onClick={() => scrollToSection("contact")}>
-										Contact
+										{t("navigation.contact")}
 									</button>
 								</li>
 							</ul>
 						</div>
 
 						<div className="footer-link-section">
-							<h3 className="footer-link-title">Services</h3>
+							<h3 className="footer-link-title">{t("footer.services")}</h3>
 							<ul className="footer-link-list">
 								<li>
-									<a href="#">Web Development</a>
+									<a href="#">{t("footer.servicesList.webDev")}</a>
 								</li>
 								<li>
-									<a href="#">Mobile Applications</a>
+									<a href="#">{t("footer.servicesList.mobileApps")}</a>
 								</li>
 								<li>
-									<a href="#">Software Solutions</a>
+									<a href="#">{t("footer.servicesList.softwareSolutions")}</a>
 								</li>
 								<li>
-									<a href="#">UX/UI Design</a>
+									<a href="#">{t("footer.servicesList.uxui")}</a>
 								</li>
 								<li>
-									<a href="#">Consulting</a>
+									<a href="#">{t("footer.servicesList.consulting")}</a>
 								</li>
 							</ul>
 						</div>
 
 						<div className="footer-link-section">
-							<h3 className="footer-link-title">Contact</h3>
+							<h3 className="footer-link-title">{t("navigation.contact")}</h3>
 							<ul className="footer-contact-list">
 								<li>
 									<svg
@@ -140,7 +142,9 @@ const Footer = ({ scrollToSection }) => {
 											strokeLinejoin="round"
 										/>
 									</svg>
-									<span>Sarajevo, Bosnia</span>
+									{/* <span>Sarajevo, Bosnia</span> */}
+									{/* translate bosnia */}
+									<span>{t("footer.address")}</span>
 								</li>
 							</ul>
 						</div>
@@ -149,7 +153,7 @@ const Footer = ({ scrollToSection }) => {
 
 				<div className="footer-bottom">
 					<p className="copyright">
-						&copy; {new Date().getFullYear()} Araneum. All rights reserved.
+						&copy; {new Date().getFullYear()} Araneum. {t("footer.copyright")}
 					</p>
 				</div>
 			</div>

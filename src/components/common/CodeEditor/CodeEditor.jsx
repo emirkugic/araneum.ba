@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./CodeEditor.css";
 
 const CodeEditor = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="code-editor-card">
 			<div className="code-editor-header">
@@ -14,7 +17,7 @@ const CodeEditor = () => {
 			</div>
 			<div className="code-editor-body">
 				<div className="code-line">
-					<span className="code-comment">// Araneum - Building the future</span>
+					<span className="code-comment">{t("codeEditor.comment")}</span>
 				</div>
 				<div className="code-line">
 					<span className="code-keyword">class</span>

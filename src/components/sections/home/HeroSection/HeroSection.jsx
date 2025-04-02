@@ -1,16 +1,19 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import Button from "../../../common/Button/Button";
 import CodeEditor from "../../../common/CodeEditor/CodeEditor.jsx";
 import "./HeroSection.css";
 
 const HeroSection = () => {
+	const { t, i18n } = useTranslation();
 	const heroTextRef = useRef(null);
 
 	// Typing effect for hero section - improved version
 	useEffect(() => {
 		if (!heroTextRef.current) return;
 
-		const texts = ["Innovation", "Excellence", "Future", "Solutions"];
+		const texts = t("hero.typingWords", { returnObjects: true });
 		let currentIndex = 0;
 		let charIndex = 0;
 		let isDeleting = false;
@@ -62,7 +65,7 @@ const HeroSection = () => {
 		return () => {
 			clearTimeout(typingTimer);
 		};
-	}, []);
+	}, [t, i18n.language]); // Re-run when language changes
 
 	const scrollToSection = (sectionId) => {
 		const section = document.getElementById(sectionId);
@@ -117,22 +120,21 @@ const HeroSection = () => {
 				<div className="hero-content">
 					<div className="hero-text-container reveal fade-right">
 						<h1 className="hero-title">
-							<span className="hero-subtitle">Building The Digital Future</span>
+							<span className="hero-subtitle">{t("hero.subtitle")}</span>
 							<span className="hero-tagline">
-								Next-Gen <span className="accent">Software</span>
+								<Trans i18nKey="hero.tagline">
+									Next-Gen <span className="accent">Software</span>
+								</Trans>
 							</span>
 							<span className="dynamic-text">
-								<span className="static-text">Powered by </span>
+								<span className="static-text">{t("hero.poweredBy")} </span>
 								<span className="typing-container">
 									<span ref={heroTextRef} className="typing-text"></span>
 								</span>
 							</span>
 						</h1>
 
-						<p className="hero-description">
-							We create cutting-edge digital solutions that transform businesses
-							and elevate user experiences in the technology-driven world.
-						</p>
+						<p className="hero-description">{t("hero.description")}</p>
 
 						<div className="hero-buttons">
 							<Button
@@ -140,7 +142,7 @@ const HeroSection = () => {
 								icon={<ArrowRightIcon />}
 								onClick={() => scrollToSection("services")}
 							>
-								Our Services
+								{t("hero.buttons.services")}
 							</Button>
 
 							<Button
@@ -148,7 +150,7 @@ const HeroSection = () => {
 								icon={<LoginIcon />}
 								onClick={() => scrollToSection("contact")}
 							>
-								Connect With Us
+								{t("hero.buttons.connect")}
 							</Button>
 						</div>
 					</div>

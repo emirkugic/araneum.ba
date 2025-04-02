@@ -1,0 +1,110 @@
+.language-switcher {
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+	z-index: 150;
+}
+
+.language-dropdown-btn {
+	background: transparent;
+	border: 1px solid var(--border-color);
+	color: var(--text-color);
+	font-size: 0.85rem;
+	padding: 6px 12px;
+	border-radius: var(--border-radius-sm);
+	cursor: pointer;
+	transition: all var(--transition-normal);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.language-dropdown-btn:hover {
+	border-color: var(--primary-color);
+	color: var(--primary-light);
+}
+
+.language-flag {
+	width: 18px;
+	height: 12px;
+	object-fit: cover;
+	border-radius: 2px;
+}
+
+.dropdown-arrow {
+	transition: transform var(--transition-normal);
+}
+
+.dropdown-arrow.open {
+	transform: rotate(180deg);
+}
+
+.language-dropdown {
+	position: absolute;
+	top: calc(100% + 10px);
+	right: 0;
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius-sm);
+	padding: 6px;
+	margin: 0;
+	list-style: none;
+	width: 160px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	animation: fadeIn 0.2s ease-out;
+}
+
+.language-option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 8px 12px;
+	background: transparent;
+	border: none;
+	color: var(--text-color-secondary);
+	cursor: pointer;
+	transition: all var(--transition-normal);
+	border-radius: var(--border-radius-sm);
+	text-align: left;
+}
+
+.language-option:hover {
+	background: rgba(110, 87, 255, 0.1);
+	color: var(--primary-light);
+}
+
+.language-option.active {
+	background: rgba(110, 87, 255, 0.15);
+	color: var(--primary-color);
+}
+
+.language-option-name {
+	font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.language-switcher {
+		margin: 1.5rem 0 0;
+		align-self: center;
+	}
+
+	.language-dropdown {
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+	}
+}

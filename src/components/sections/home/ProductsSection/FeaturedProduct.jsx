@@ -1,14 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./FeaturedProduct.css";
 
 const FeaturedProduct = () => {
-	const features = [
-		"Student Information System",
-		"Intelligent Grade Tracking",
-		"Automated Attendance",
-		"Real-time Communication",
-		"Resource Management",
-	];
+	const { t } = useTranslation();
+	const features = t("products.featuredProduct.features", {
+		returnObjects: true,
+	});
 
 	const CheckIcon = () => (
 		<svg
@@ -80,12 +78,12 @@ const FeaturedProduct = () => {
 				<h3 className="product-title">
 					mojDnevnik<span className="blink-cursor">_</span>
 				</h3>
-				<span className="product-tagline">Next-Gen School Management</span>
+				<span className="product-tagline">
+					{t("products.featuredProduct.tagline")}
+				</span>
 
 				<p className="product-description">
-					A comprehensive digital platform revolutionizing how educational
-					institutions manage their operations, with advanced features and an
-					intuitive interface designed for teachers, students, and parents.
+					{t("products.featuredProduct.description")}
 				</p>
 
 				<ul className="product-features">
@@ -105,7 +103,7 @@ const FeaturedProduct = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Explore Platform
+					{t("products.featuredProduct.exploreButton")}
 					<ExternalLinkIcon />
 				</a>
 			</div>

@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import ProjectCard from "./ProjectCard";
 import "./ProjectsGrid.css";
 
 const ProjectsGrid = () => {
+	const { t } = useTranslation();
+
 	const projects = [
 		{
 			id: "glasnik",
@@ -59,7 +62,7 @@ const ProjectsGrid = () => {
 	return (
 		<div className="projects-section">
 			<h3 className="projects-section-title reveal fade-up">
-				Our Other Projects
+				{t("products.otherProjects.title")}
 			</h3>
 			<div className="projects-grid">
 				{projects.map((project) => (

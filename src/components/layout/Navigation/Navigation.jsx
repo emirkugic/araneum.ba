@@ -1,14 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../common/LanguageSwitcher/LanguageSwitcher";
 import "./Navigation.css";
 
 const Navigation = ({ isMenuOpen, activeSection, scrollToSection }) => {
+	const { t } = useTranslation();
+
 	const navItems = [
-		{ id: "home", label: "Home" },
-		{ id: "services", label: "Services" },
-		{ id: "products", label: "Products" },
-		{ id: "about", label: "About" },
-		{ id: "testimonials", label: "Testimonials" },
-		{ id: "contact", label: "Contact" },
+		{ id: "home", label: t("navigation.home") },
+		{ id: "services", label: t("navigation.services") },
+		{ id: "products", label: t("navigation.products") },
+		{ id: "about", label: t("navigation.about") },
+		{ id: "testimonials", label: t("navigation.testimonials") },
+		{ id: "contact", label: t("navigation.contact") },
 	];
 
 	return (
@@ -25,6 +29,7 @@ const Navigation = ({ isMenuOpen, activeSection, scrollToSection }) => {
 					</li>
 				))}
 			</ul>
+			<LanguageSwitcher />
 		</nav>
 	);
 };

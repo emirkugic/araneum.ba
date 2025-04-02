@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./ContactInfo.css";
 
 const ContactInfo = () => {
+	const { t } = useTranslation();
+
 	const PhoneIcon = () => (
 		<svg
 			width="24"
@@ -173,10 +176,9 @@ const ContactInfo = () => {
 
 	return (
 		<div className="contact-info reveal fade-right">
-			<h3 className="contact-info-title">Contact Information</h3>
+			<h3 className="contact-info-title">{t("contact.info.title")}</h3>
 			<p className="contact-info-description">
-				Have questions or want to discuss your project requirements? Reach out
-				to us through any of the following channels.
+				{t("contact.info.description")}
 			</p>
 
 			<div className="contact-details">
@@ -185,7 +187,7 @@ const ContactInfo = () => {
 						<PhoneIcon />
 					</div>
 					<div className="contact-detail">
-						<h4>Phone</h4>
+						<h4>{t("contact.info.phone")}</h4>
 						<p>+387 62 909 200</p>
 					</div>
 				</div>
@@ -195,7 +197,7 @@ const ContactInfo = () => {
 						<EmailIcon />
 					</div>
 					<div className="contact-detail">
-						<h4>Email</h4>
+						<h4>{t("contact.info.email")}</h4>
 						<p>info@araneum.ba</p>
 					</div>
 				</div>
@@ -205,8 +207,8 @@ const ContactInfo = () => {
 						<LocationIcon />
 					</div>
 					<div className="contact-detail">
-						<h4>Location</h4>
-						<p>Sarajevo, Bosnia</p>
+						<h4>{t("contact.info.location")}</h4>
+						<p>{t("footer.address")}</p>
 					</div>
 				</div>
 			</div>

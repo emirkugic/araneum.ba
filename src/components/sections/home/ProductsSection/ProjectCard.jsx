@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./ProjectCard.css";
 
 const ProjectCard = ({ title, description, image, tags, link, delay }) => {
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className="project-card reveal fade-up"
@@ -21,7 +24,7 @@ const ProjectCard = ({ title, description, image, tags, link, delay }) => {
 				<h4>{title}</h4>
 				<p>{description}</p>
 				<a href={link} className="project-card-link">
-					View Project
+					{t("products.otherProjects.viewProject")}
 					<svg
 						width="16"
 						height="16"

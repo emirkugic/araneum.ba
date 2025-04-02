@@ -1,0 +1,126 @@
+{
+    "navigation": {
+        "home": "Home",
+        "services": "Services",
+        "products": "Products",
+        "about": "About",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+    },
+    "hero": {
+        "subtitle": "Building The Digital Future",
+        "tagline": "Next-Gen <1>Software</1>",
+        "poweredBy": "Powered by",
+        "typingWords": [
+            "Innovation",
+            "Excellence",
+            "Future",
+            "Solutions"
+        ],
+        "description": "We create cutting-edge digital solutions that transform businesses and elevate user experiences in the technology-driven world.",
+        "buttons": {
+            "services": "Our Services",
+            "connect": "Connect With Us"
+        }
+    },
+    "services": {
+        "tag": "What We Do",
+        "title": "Our Services",
+        "description": "We offer comprehensive software solutions designed to elevate your business with cutting-edge technology and exceptional user experiences.",
+        "items": {
+            "webDev": {
+                "title": "Web Development",
+                "description": "Custom websites and web applications built with modern frameworks and best practices, delivering exceptional user experiences."
+            },
+            "mobileApps": {
+                "title": "Mobile Applications",
+                "description": "Native and cross-platform mobile apps that provide seamless experiences across iOS and Android devices with innovative features."
+            },
+            "softwareSolutions": {
+                "title": "Software Solutions",
+                "description": "Enterprise-grade software solutions that optimize workflows, increase efficiency, and drive business growth with scalable architecture."
+            }
+        },
+        "learnMore": "Learn More"
+    },
+    "products": {
+        "tag": "Our Products",
+        "title": "Featured Solution",
+        "description": "Discover our flagship product that's revolutionizing the education management landscape",
+        "featuredProduct": {
+            "tagline": "Next-Gen School Management",
+            "description": "A comprehensive digital platform revolutionizing how educational institutions manage their operations, with advanced features and an intuitive interface designed for teachers, students, and parents.",
+            "features": [
+                "Student Information System",
+                "Intelligent Grade Tracking",
+                "Automated Attendance",
+                "Real-time Communication",
+                "Resource Management"
+            ],
+            "exploreButton": "Explore Platform"
+        },
+        "otherProjects": {
+            "title": "Our Other Projects",
+            "viewProject": "View Project"
+        }
+    },
+    "about": {
+        "tag": "Who We Are",
+        "title": "About Araneum",
+        "description1": "We are a forward-thinking software development company dedicated to creating innovative digital solutions that push the boundaries of what's possible in today's technology landscape.",
+        "description2": "Our team of expert developers, designers, and strategists work together to deliver cutting-edge products that transform businesses and enhance user experiences across web, mobile, and cloud platforms."
+    },
+    "testimonials": {
+        "tag": "What Clients Say",
+        "title": "Testimonials",
+        "description": "Don't just take our word for it – hear what our clients have to say about our work"
+    },
+    "contact": {
+        "tag": "Get In Touch",
+        "title": "Contact Us",
+        "description": "Ready to start your next digital project? Let's create something amazing together.",
+        "info": {
+            "title": "Contact Information",
+            "description": "Have questions or want to discuss your project requirements? Reach out to us through any of the following channels.",
+            "phone": "Phone",
+            "email": "Email",
+            "location": "Location"
+        },
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "subjectPlaceholder": "What is this regarding?",
+            "message": "Message",
+            "messagePlaceholder": "Tell us about your project",
+            "sending": "Sending...",
+            "send": "Send Message",
+            "success": {
+                "title": "Message Sent Successfully!",
+                "description": "Thank you for reaching out to us. Our team will review your message and get back to you shortly.",
+                "button": "Send Another Message"
+            },
+            "error": {
+                "title": "Something Went Wrong",
+                "button": "Try Again"
+            }
+        }
+    },
+    "footer": {
+        "description": "Crafting innovative digital solutions that power the future of business and technology.",
+        "quickLinks": "Quick Links",
+        "services": "Services",
+        "servicesList": {
+            "webDev": "Web Development",
+            "mobileApps": "Mobile Applications",
+            "softwareSolutions": "Software Solutions",
+            "uxui": "UX/UI Design",
+            "consulting": "Consulting"
+        },
+        "copyright": "All rights reserved.",
+        "address": "Sarajevo, Bosnia"
+    },
+    "codeEditor": {
+        "comment": "// Araneum - Building the future"
+    }
+}

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+	const { t } = useTranslation();
 	const [formStatus, setFormStatus] = useState({
 		submitting: false,
 		success: false,
@@ -82,10 +84,9 @@ const ContactForm = () => {
 					/>
 				</svg>
 			</div>
-			<h4 className="success-title">Message Sent Successfully!</h4>
+			<h4 className="success-title">{t("contact.form.success.title")}</h4>
 			<p className="success-description">
-				Thank you for reaching out to us. Our team will review your message and
-				get back to you shortly.
+				{t("contact.form.success.description")}
 			</p>
 			<button
 				onClick={() =>
@@ -97,7 +98,7 @@ const ContactForm = () => {
 				}
 				className="secondary-button"
 			>
-				Send Another Message
+				{t("contact.form.success.button")}
 			</button>
 		</div>
 	);
@@ -122,7 +123,7 @@ const ContactForm = () => {
 					/>
 				</svg>
 			</div>
-			<h4 className="error-title">Something Went Wrong</h4>
+			<h4 className="error-title">{t("contact.form.error.title")}</h4>
 			<p className="error-description">{formStatus.error}</p>
 			<button
 				onClick={() =>
@@ -134,7 +135,7 @@ const ContactForm = () => {
 				}
 				className="secondary-button"
 			>
-				Try Again
+				{t("contact.form.error.button")}
 			</button>
 		</div>
 	);
@@ -145,44 +146,44 @@ const ContactForm = () => {
 				<form className="form" onSubmit={handleSubmit}>
 					<div className="form-row">
 						<div className="form-group">
-							<label htmlFor="name">Name</label>
+							<label htmlFor="name">{t("contact.form.name")}</label>
 							<input
 								type="text"
 								id="name"
 								name="name"
-								placeholder="Your name"
+								placeholder={t("contact.form.name")}
 								required
 								disabled={formStatus.submitting}
 							/>
 						</div>
 						<div className="form-group">
-							<label htmlFor="email">Email</label>
+							<label htmlFor="email">{t("contact.form.email")}</label>
 							<input
 								type="email"
 								id="email"
 								name="email"
-								placeholder="Your email"
+								placeholder={t("contact.form.email")}
 								required
 								disabled={formStatus.submitting}
 							/>
 						</div>
 					</div>
 					<div className="form-group">
-						<label htmlFor="subject">Subject</label>
+						<label htmlFor="subject">{t("contact.form.subject")}</label>
 						<input
 							type="text"
 							id="subject"
 							name="subject"
-							placeholder="What is this regarding?"
+							placeholder={t("contact.form.subjectPlaceholder")}
 							disabled={formStatus.submitting}
 						/>
 					</div>
 					<div className="form-group">
-						<label htmlFor="message">Message</label>
+						<label htmlFor="message">{t("contact.form.message")}</label>
 						<textarea
 							id="message"
 							name="message"
-							placeholder="Tell us about your project"
+							placeholder={t("contact.form.messagePlaceholder")}
 							rows="4"
 							required
 							disabled={formStatus.submitting}
@@ -195,7 +196,9 @@ const ContactForm = () => {
 						}`}
 						disabled={formStatus.submitting}
 					>
-						{formStatus.submitting ? "Sending..." : "Send Message"}
+						{formStatus.submitting
+							? t("contact.form.sending")
+							: t("contact.form.send")}
 						{!formStatus.submitting && (
 							<svg
 								width="20"

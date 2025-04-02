@@ -1,17 +1,20 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import SectionHeader from "../../../common/SectionHeader/SectionHeader";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
 import "./ContactSection.css";
 
 const ContactSection = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section id="contact" className="contact-section">
 			<div className="container">
 				<SectionHeader
-					tag="Get In Touch"
-					title="Contact Us"
-					description="Ready to start your next digital project? Let's create something amazing together."
+					tag={t("contact.tag")}
+					title={t("contact.title")}
+					description={t("contact.description")}
 				/>
 
 				<div className="contact-content">

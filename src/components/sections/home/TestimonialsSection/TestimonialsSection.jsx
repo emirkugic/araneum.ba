@@ -1,9 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import SectionHeader from "../../../common/SectionHeader/SectionHeader";
 import TestimonialCard from "./TestimonialCard";
 import "./TestimonialsSection.css";
 
 const TestimonialsSection = () => {
+	const { t } = useTranslation();
+
 	const testimonials = [
 		{
 			id: 1,
@@ -27,9 +30,9 @@ const TestimonialsSection = () => {
 		<section id="testimonials" className="testimonials-section">
 			<div className="container">
 				<SectionHeader
-					tag="What Clients Say"
-					title="Testimonials"
-					description="Don't just take our word for it – hear what our clients have to say about our work"
+					tag={t("testimonials.tag")}
+					title={t("testimonials.title")}
+					description={t("testimonials.description")}
 				/>
 
 				<div className="testimonials-grid">

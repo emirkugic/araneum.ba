@@ -6,7 +6,7 @@ import "./HeroSection.css";
 const HeroSection = () => {
 	const heroTextRef = useRef(null);
 
-	// Typing effect for hero section
+	// Typing effect for hero section - improved version
 	useEffect(() => {
 		if (!heroTextRef.current) return;
 
@@ -20,6 +20,7 @@ const HeroSection = () => {
 			const currentText = texts[currentIndex];
 
 			if (heroTextRef.current) {
+				// Protection in case component unmounts
 				if (isDeleting) {
 					heroTextRef.current.textContent = currentText.substring(
 						0,
@@ -38,7 +39,7 @@ const HeroSection = () => {
 
 				if (!isDeleting && charIndex === currentText.length) {
 					isDeleting = true;
-					typingSpeed = 1500; // Pause at end
+					typingSpeed = 1000; // Pause at end (reduced from 1500 to match portfolio)
 				} else if (isDeleting && charIndex === 0) {
 					isDeleting = false;
 					currentIndex = (currentIndex + 1) % texts.length;
@@ -122,7 +123,9 @@ const HeroSection = () => {
 							</span>
 							<span className="dynamic-text">
 								<span className="static-text">Powered by </span>
-								<span ref={heroTextRef} className="typing-text"></span>
+								<span className="typing-container">
+									<span ref={heroTextRef} className="typing-text"></span>
+								</span>
 							</span>
 						</h1>
 

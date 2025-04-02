@@ -63,19 +63,39 @@
 	margin-right: 0.5rem;
 }
 
+/* New wrapper element for proper cursor positioning */
+.typing-container {
+	position: relative;
+	display: inline-block;
+	min-height: 2rem; /* Maintain consistent height */
+}
+
 .typing-text {
 	color: var(--secondary-color);
 	font-weight: 700;
 	position: relative;
-	min-width: 120px;
+	display: inline-block;
 }
 
-.typing-text::after {
+/* The cursor */
+.typing-container::after {
 	content: "|";
 	position: absolute;
+	top: 0;
 	right: -8px;
-	animation: blink-caret 0.75s step-end infinite;
 	color: var(--secondary-color);
+	animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Animation for the blinking cursor */
+@keyframes blink-caret {
+	from,
+	to {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
 }
 
 .hero-description {
@@ -155,6 +175,19 @@
 	right: -8%;
 	background: linear-gradient(135deg, #ff9900, #ff7400);
 	animation-delay: 0.5s;
+}
+
+/* Animation for floating tech badges */
+@keyframes floatBadge {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @media screen and (max-width: 1200px) {

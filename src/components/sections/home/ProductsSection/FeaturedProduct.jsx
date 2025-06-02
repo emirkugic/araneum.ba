@@ -70,7 +70,7 @@ const FeaturedProduct = () => {
 			<div className="product-image reveal fade-right">
 				<div className="product-image-glow"></div>
 				<div className="product-image-frame">
-					<img src="/image1.png" alt="mojDnevnik School Management System" />
+					<img src="/ednevnik.png" alt="mojDnevnik School Management System" />
 				</div>
 			</div>
 

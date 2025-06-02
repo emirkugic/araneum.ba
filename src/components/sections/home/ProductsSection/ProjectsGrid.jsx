@@ -57,6 +57,16 @@ const ProjectsGrid = () => {
 			link: "https://portfolio.araneum.ba/projects/photography",
 			delay: "0.5s",
 		},
+		{
+			id: "novamas",
+			title: "NovamaS Fashion Blog",
+			description:
+				"A fashion blog website for children and teens, featuring articles, product reviews, and a user-friendly interface for browsing content.",
+			image: "/novamas.png",
+			tags: ["Web Development", "ReactJS, Headless CMS"],
+			link: "https://novamas.ba",
+			delay: "0.6s",
+		},
 	];
 
 	return (

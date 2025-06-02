@@ -11,7 +11,7 @@ const Navigation = ({ isMenuOpen, activeSection, scrollToSection }) => {
 		{ id: "services", label: t("navigation.services") },
 		{ id: "products", label: t("navigation.products") },
 		{ id: "about", label: t("navigation.about") },
-		{ id: "testimonials", label: t("navigation.testimonials") },
+		// { id: "testimonials", label: t("navigation.testimonials") },
 		{ id: "contact", label: t("navigation.contact") },
 	];
 

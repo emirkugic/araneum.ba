@@ -8,16 +8,6 @@ const ProjectsGrid = () => {
 
 	const projects = [
 		{
-			id: "glasnik",
-			title: "Glasnik",
-			description:
-				"A modern news website with real-time updates and a user-friendly interface for reading and sharing articles.",
-			image: "/glasnik.png",
-			tags: ["Web Development", "ReactJS"],
-			link: "https://portfolio.araneum.ba/projects/news",
-			delay: "0.1s",
-		},
-		{
 			id: "metalprec",
 			title: "MetalPrec",
 			description:
@@ -28,6 +18,16 @@ const ProjectsGrid = () => {
 			delay: "0.2s",
 		},
 		{
+			id: "mechanic",
+			title: "Bosch auto service",
+			description:
+				"A website for a Bosch auto service center. It features service listings, contact information, and customer reviews.",
+			image: "/mechanic.png",
+			tags: ["Web Development", "ReactJS"],
+			link: "https://bosch-automehanicar.araneum.ba/",
+			delay: "0.3s",
+		},
+		{
 			id: "barber",
 			title: "Barber Reservation",
 			description:
@@ -35,7 +35,7 @@ const ProjectsGrid = () => {
 			image: "/barber.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://portfolio.araneum.ba/projects/barber",
-			delay: "0.3s",
+			delay: "0.4s",
 		},
 		{
 			id: "coffee",
@@ -45,7 +45,17 @@ const ProjectsGrid = () => {
 			image: "/coffee.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://portfolio.araneum.ba/projects/coffee",
-			delay: "0.4s",
+			delay: "0.5s",
+		},
+		{
+			id: "electrician",
+			title: "Sarajevo Electrician",
+			description:
+				"A professional electrician service website offering various electrical services, customer testimonials, and a contact form for service requests.",
+			image: "/electrician.png",
+			tags: ["Web Development", "ReactJS"],
+			link: "https://elektricar.araneum.ba/",
+			delay: "0.6s",
 		},
 		{
 			id: "photography",
@@ -55,7 +65,17 @@ const ProjectsGrid = () => {
 			image: "/photography.png",
 			tags: ["Web Development", "HTML/CSS/JS"],
 			link: "https://portfolio.araneum.ba/projects/photography",
-			delay: "0.5s",
+			delay: "0.7s",
+		},
+		{
+			id: "glasnik",
+			title: "Glasnik",
+			description:
+				"A modern news website with real-time updates and a user-friendly interface for reading and sharing articles.",
+			image: "/glasnik.png",
+			tags: ["Web Development", "ReactJS"],
+			link: "https://portfolio.araneum.ba/projects/news",
+			delay: "0.8s",
 		},
 		{
 			id: "novamas",
@@ -65,7 +85,7 @@ const ProjectsGrid = () => {
 			image: "/novamas.png",
 			tags: ["Web Development", "ReactJS, Headless CMS"],
 			link: "https://novamas.ba",
-			delay: "0.6s",
+			delay: "0.9s",
 		},
 	];
 

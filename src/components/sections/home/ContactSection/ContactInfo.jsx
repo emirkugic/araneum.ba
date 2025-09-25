@@ -213,7 +213,7 @@ const ContactInfo = () => {
 				</div>
 			</div>
 
-			<div className="social-links">
+			{/* <div className="social-links">
 				<a href="#" className="social-link" aria-label="Facebook">
 					<FacebookIcon />
 				</a>
@@ -226,7 +226,7 @@ const ContactInfo = () => {
 				<a href="#" className="social-link" aria-label="Instagram">
 					<InstagramIcon />
 				</a>
-			</div>
+			</div> */}
 		</div>
 	);
 };

@@ -6,6 +6,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "./locales/en/translation.json";
 import translationBS from "./locales/bs/translation.json";
 import translationDE from "./locales/de/translation.json";
+import translationSR from "./locales/sr/translation.json";
+import translationHR from "./locales/hr/translation.json";
 
 // Resources object with translations
 const resources = {
@@ -15,8 +17,14 @@ const resources = {
 	bs: {
 		translation: translationBS,
 	},
+	hr: {
+		translation: translationHR,
+	},
 	de: {
 		translation: translationDE,
+	},
+	sr: {
+		translation: translationSR,
 	},
 };
 
@@ -46,8 +54,8 @@ i18n
 			// Only detect languages we support
 			checkWhitelist: true,
 		},
-		supportedLngs: ["en", "bs", "de"],
-		whitelist: ["en", "bs", "de"],
+		supportedLngs: ["en", "bs", "hr", "de", "sr"],
+		whitelist: ["en", "bs", "hr", "de", "sr"],
 	});
 
 export default i18n;

@@ -5,7 +5,9 @@ import "./LanguageSwitcher.css";
 // Import flag icons
 import flagEN from "../../../assets/flags/en.svg";
 import flagBS from "../../../assets/flags/bs.svg";
+import flagHR from "../../../assets/flags/hr.svg";
 import flagDE from "../../../assets/flags/de.svg";
+import flagSR from "../../../assets/flags/sr.svg";
 
 const LanguageSwitcher = () => {
 	const { i18n } = useTranslation();
@@ -16,6 +18,8 @@ const LanguageSwitcher = () => {
 	const languages = [
 		{ code: "en", name: "English", flag: flagEN },
 		{ code: "bs", name: "Bosanski", flag: flagBS },
+		{ code: "hr", name: "Hrvatski", flag: flagHR },
+		{ code: "sr", name: "Српски", flag: flagSR },
 		{ code: "de", name: "Deutsch", flag: flagDE },
 	];
 

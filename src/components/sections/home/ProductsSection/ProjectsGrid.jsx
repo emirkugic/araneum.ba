@@ -9,9 +9,8 @@ const ProjectsGrid = () => {
 	const projects = [
 		{
 			id: "metalprec",
-			title: "MetalPrec",
-			description:
-				"A CNC machine business website with a product catalog, pricing, and contact form for customers to request quotes.",
+			title: t("products.otherProjects.items.metalprec.title"),
+			description: t("products.otherProjects.items.metalprec.description"),
 			image: "/metalprec.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://portfolio.araneum.ba/projects/metalprec",
@@ -19,9 +18,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "mechanic",
-			title: "Bosch auto service",
-			description:
-				"A website for a Bosch auto service center. It features service listings, contact information, and customer reviews.",
+			title: t("products.otherProjects.items.mechanic.title"),
+			description: t("products.otherProjects.items.mechanic.description"),
 			image: "/mechanic.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://bosch-automehanicar.araneum.ba/",
@@ -29,9 +27,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "barber",
-			title: "Barber Reservation",
-			description:
-				"A barber reservation system with a booking calendar, user profiles, and notifications for appointments.",
+			title: t("products.otherProjects.items.barber.title"),
+			description: t("products.otherProjects.items.barber.description"),
 			image: "/barber.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://portfolio.araneum.ba/projects/barber",
@@ -39,9 +36,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "coffee",
-			title: "Coffee Shop",
-			description:
-				"A coffee shop website with a menu, online ordering, and contact form for customers to place orders and make reservations.",
+			title: t("products.otherProjects.items.coffee.title"),
+			description: t("products.otherProjects.items.coffee.description"),
 			image: "/coffee.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://portfolio.araneum.ba/projects/coffee",
@@ -49,9 +45,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "electrician",
-			title: "Sarajevo Electrician",
-			description:
-				"A professional electrician service website offering various electrical services, customer testimonials, and a contact form for service requests.",
+			title: t("products.otherProjects.items.electrician.title"),
+			description: t("products.otherProjects.items.electrician.description"),
 			image: "/electrician.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://elektricar.araneum.ba/",
@@ -59,9 +54,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "photography",
-			title: "Photography Portfolio",
-			description:
-				"A beautiful photography portfolio showcasing nature photography with a responsive design and smooth animations.",
+			title: t("products.otherProjects.items.photography.title"),
+			description: t("products.otherProjects.items.photography.description"),
 			image: "/photography.png",
 			tags: ["Web Development", "HTML/CSS/JS"],
 			link: "https://portfolio.araneum.ba/projects/photography",
@@ -69,9 +63,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "glasnik",
-			title: "Glasnik",
-			description:
-				"A modern news website with real-time updates and a user-friendly interface for reading and sharing articles.",
+			title: t("products.otherProjects.items.glasnik.title"),
+			description: t("products.otherProjects.items.glasnik.description"),
 			image: "/glasnik.png",
 			tags: ["Web Development", "ReactJS"],
 			link: "https://portfolio.araneum.ba/projects/news",
@@ -79,9 +72,8 @@ const ProjectsGrid = () => {
 		},
 		{
 			id: "novamas",
-			title: "NovamaS Fashion Blog",
-			description:
-				"A fashion blog website for children and teens, featuring articles, product reviews, and a user-friendly interface for browsing content.",
+			title: t("products.otherProjects.items.novamas.title"),
+			description: t("products.otherProjects.items.novamas.description"),
 			image: "/novamas.png",
 			tags: ["Web Development", "ReactJS, Headless CMS"],
 			link: "https://novamas.ba",

@@ -62,6 +62,44 @@
         "otherProjects": {
             "title": "Our Other Projects",
             "viewProject": "View Project"
+        },
+        "otherProjects": {
+            "title": "Our Other Projects",
+            "viewProject": "View Project",
+            "items": {
+                "metalprec": {
+                    "title": "MetalPrec",
+                    "description": "A CNC machine business website with a product catalog, pricing, and contact form for customers to request quotes."
+                },
+                "mechanic": {
+                    "title": "Bosch auto service",
+                    "description": "A website for a Bosch auto service center. It features service listings, contact information, and customer reviews."
+                },
+                "barber": {
+                    "title": "Barber Reservation",
+                    "description": "A barber reservation system with a booking calendar, user profiles, and notifications for appointments."
+                },
+                "coffee": {
+                    "title": "Coffee Shop",
+                    "description": "A coffee shop website with a menu, online ordering, and contact form for customers to place orders and make reservations."
+                },
+                "electrician": {
+                    "title": "Sarajevo Electrician",
+                    "description": "A professional electrician service website offering various electrical services, customer testimonials, and a contact form for service requests."
+                },
+                "photography": {
+                    "title": "Photography Portfolio",
+                    "description": "A beautiful photography portfolio showcasing nature photography with a responsive design and smooth animations."
+                },
+                "glasnik": {
+                    "title": "Glasnik",
+                    "description": "A modern news website with real-time updates and a user-friendly interface for reading and sharing articles."
+                },
+                "novamas": {
+                    "title": "NovamaS Fashion Blog",
+                    "description": "A fashion blog website for children and teens, featuring articles, product reviews, and a user-friendly interface for browsing content."
+                }
+            }
         }
     },
     "about": {
